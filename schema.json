@@ -122,3 +122,310 @@
                 "unique": true
             }
         },
+        {
+            "name": "name",
+            "title": "Nom",
+            "description": "Ce champ renseigne le nom du chantier.",
+            "example": "Report des Travaux rue de la Madeleine et rue De Gueldre",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "description",
+            "title": "Description",
+            "description": "Ce champ contient une description complète des travaux. Si le chantier suit ou est suivi d'autres travaux, cela peut-être précisé.",
+            "example": "Les travaux de dévoiements des réseaux souterrains se poursuivent rue Léopold et rue de la Cité.",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "description_url",
+            "title": "Lien description chantier",
+            "description": "Si le chantier est documenté sur une page web, le producteur de données peut renseigner l'URL dans ce champ.",
+            "example": "https://www.liege.be/fr/vie-communale/services-communaux/mobilite/projets/tram/info-travaux-du-tram/avis-travaux-rue-de-la-madeleine-et-rue-de-gueldre",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "municipality",
+            "title": "Nom de la commune",
+            "description": "Ce champ contient le nom de la commune dans laquelle se situe le chantier. Le nom de la commune provient de la base de données BeST Address : https://opendata.bosa.be/index.fr.html  ou de la liste des codes INS : https://statbel.fgov.be/fr/open-data/code-refnis ",
+            "example": "Namur",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+       {
+            "name": "ins_code",
+            "title": "Code INS",
+            "description": "Ce champ contient le code INS de la commune où se situe le chantier. Il est accessible ici :  https://statbel.fgov.be/fr/open-data/code-refnis ",
+            "example": "92094",
+            "type": "number",
+            "constraints": {
+                "required": true,
+                "pattern":"^\\d{5}$"
+            }
+        },
+        {
+            "name": "zone_address",
+            "title": "Partie de commune",
+            "description": "Ce champ continent le nom de la partie de commune où se situe le chantier, conforme à l'appelation dans StatBel : https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie",
+            "example": "Wépion",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "ins_zone_address",
+            "title": "Code INS de la partie de commune",
+            "description": "Ce champ contient le code INS de la partie de commune où se situe le chantier. La découpe géographique de StatBel Level 5 (NIS6) liste ces codes : https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie",
+            "example": "92094C",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "street_name",
+            "title": "Nom de rue",
+            "description": "Ce champ renseigne le nom de la voirie où se situe le chantier (ou de la voirie la plus proche s'il n'est pas en voirie). ",
+            "example": "Avenue Sart Paradis",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "street_number",
+            "title": "Code rue BeSTAddress",
+            "description": "Ce champ contient le code de la voirie où se situe le chantier dans la base de données BeSTAdress (ou de la voirie la plus proche s'il n'est pas en voirie) : https://opendata.bosa.be/index.fr.html",
+            "example": "7753128",
+            "type": "number",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "street_number_rrn",
+            "title": "Code rue national",
+            "description": "Code de la voirie où se situe le chantier dans le registre national (ou de la voirie la plus proche s'il n'est pas en voirie)",
+            "example": "8701",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+         },
+        {
+            "name": "location",
+            "title": "Localisation",
+            "description": "Ce champ précise l'endroit de la voirie où se trouve le chantier.",
+            "example": "A hauteur du hall sportif communal",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+         },
+         {
+            "name": "roadworks_type",
+            "title": "Type de travaux",
+            "description": "Le champ précise le type de travaux de voirie. Les valeurs possibles sont : Aménagement de voiries (création d'un trottoir, installation d'un ralentisseur, ...), Impétrant (installation du gaz, remplacement des égouts, …), Réfection de voiries (remplacement du revêtement, réparation d'un nid de poule, entretion des trottoirs, ...), Création de voiries, Autre",
+            "example": "Impétrant",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": ["Aménagement de voiries", "Impétrant", "Réfection de voiries", "Création de voiries", "Autre"]
+            }
+         },
+         {
+            "name": "roadworks_type_description",
+            "title": "Description du type de travaux",
+            "description": "Ce champ est recommandé. Il précise de la nature des travaux.",
+            "example": "Installation du gaz",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+         },
+         {
+            "name": "status",
+            "title": "Statut du chantier",
+            "description": "Ce champ informe sur le statut du chantier. Ce champ doit être mis à jour au moment du changement de statut (début ou fin des travaux). Les valeurs possibles sont : Planifié, En cours, Terminé, Inconnu",
+            "example": "Planifié",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": ["Planifié", "En cours", "Réalisé", "Inconnu"]
+            }
+         },
+        {
+            "name": "year",
+            "title": "Année",
+            "description": "Ce champ renseigne sur l'année de début du chantée. Pour un chantier planifié, renseigner l'année de début prévue. Pour un chantier en cours ou terminé, indiquer l'année de début effective. Ce champ doit être  mis à jour lorsque la date de début du chantier évolue.",
+            "example": "2020",
+            "type": "year",
+            "constraints": {
+                "required": true
+            }
+         },
+         { 
+            "name": "start_date",
+            "title": "Date de début",
+            "description": "Ce champ renseigne la date exacte de début du chantier. Pour un chantier planifié : date de début prévue. Pour un chantier en cours ou terminé : date de début effective. Le champ respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD). Il doit être mis à jour lorsque la date de début du chantier évolue.",
+            "example": "2020-10-14",
+            "type": "default",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "end_date",
+            "title": "Date de fin",
+            "description": "Ce champ indique la date de fin du chantier. Pour un chantier planifié ou en cours : date de fin prévue. Pour un chantier terminé : date de fin effective. Le champ respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD). Ce champ doit être  mis à jour lorsque la date de fin du chantier évolue.",
+            "example": "2021-11-03",
+            "type": "default",
+            "constraints": {
+                "required": true
+            }
+         },
+         { 
+            "name": "geometry",
+            "title": "Geométrie",
+            "description": "Ce champ est recommandé. Il indique les coordonnées de la zone du chantier. Il respecte le format WGS 1984 (latitude,longitude). Ne pas mettre d'espace après la virgule. Les coordonnées d'un lieu peuvent être générées ici : https://www.coordonnees-gps.fr/carte/pays/BE",
+            "example": "50.46667043338194,4.847505306238095",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "site_area",
+            "title": "Superficie du chantier",
+            "description": "Ce champ indique la superficie du chantier en mètres carrés.",
+            "example": "125",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "length",
+            "title": "Longueur de voirie en chantier",
+            "description": "Ce champ indique la longueur de la voirie concernée par le chantier en mètres. ",
+            "example": "64",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "validated_by_authorities",
+            "title": "Validé par les autorités",
+            "description": "Ce champ précise si le chantier a été validé par les autorités. Si non applicable : ne pas renseigner ce champ.",
+            "example": "true",
+            "type": "boolean",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "impact",
+            "title": "Impacts du chantier",
+            "description": "Ce champ décrit les impacts prévus par le chantier (mobilité, environnement, bruit, …)",
+            "example": "Réduction de la circulation à une bande par sens de circulation",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+         },
+         { 
+            "name": "traffic_adaptation",
+            "title": "Adaptations de la circulation",
+            "description": "Ce champ est recommandé. Il indique l'éventuel dispositif modifiant la circulation pendant la durée du chantier. Les valeurs possibles sont (un choix) : Sens unique, Sens unique limité, Réduction du nombre de bandes, Circulation alternée, Voie fermée, Vitesse réduite, Limitation selon le gabarit du véhicule, Pas de modification",
+            "example": "Réduction de la circulation à une bande par sens de circulation",
+            "type": "string",
+            "constraints": {
+                "required": false
+                "enum": ["Sens unique", "Sens unique limité", "Réduction du nombre de bandes", "Circulation alternée", "Voie fermée", "Vitesse réduite", "Limitation selon le gabarit du véhicule", "Pas de modification"]
+            }
+         },
+         {
+            "name": "provider",
+            "title": "Gestionnaire du chantier",
+            "description": "Ce champ indique le nom du commanditaire (public ou privé) du chantier.",
+            "example": "Sofico",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "signage_manager",
+            "title": "Responsable de la signalisation",
+            "description": "Ce champ est recommandé. Il indique le nom du responsable de la signalisation du chantier.",
+            "example": "Eurovia",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "contractor",
+            "title": "Entrepreneur",
+            "description": "Ce champ est recommandé. Il indique le nom de l'entrepreneur responsable du chantier.",
+            "example": "Eurovia",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "projected_budget",
+            "title": "Budget previsionnel",
+            "description": "Ce champ est recommandé. Il indique le budget prévisionnel du chantier exprimé en euros TVAC.",
+            "example": "1200000",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "effective_amount",
+            "title": "Montant effectif",
+            "description": "Ce champ est recommandé. Il indique le montant effectif du chantier exprimé en euros TVAC.",
+            "example": "1310000",
+            "type": "number",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "created_date",
+            "title": "Date de création de la donnée",
+            "description": "Ce champ indique la date de création de la donnée dans le jeu. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD) ",
+            "example": "2021-11-03",
+            "type": "default",
+            "constraints": {
+                "required": false
+            }
+          },
+          {
+            "name": "last_modified_date",
+            "title": "Date de dernière modification de la donnée",
+            "description": "Ce champ indique la date de la dernière modification de la donnée dans le jeu. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD). ",
+            "example": "2021-12-05",
+            "type": "default",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "primaryKey":"id"
+}
