@@ -110,3 +110,15 @@
     "updated": "2022-10-12",
     "homepage": "https://github.com/FuturoCite/standard-travaux-voiries",
     "uri": "https://raw.githubusercontent.com/FuturoCite/standard-travaux-voiries/main/schema.json",
+    "fields": [
+        {
+            "name": "id",
+            "title": "Identifiant",
+            "description": "Ce champ contient un identifiant unique local. Le producteur de données le génère en associant le code INS de la commune dans laquelle se situe le chantier à un nombre. Ce champ permet d'éviter localement les doublons. Le code INS de la commune est accessible ici : https://statbel.fgov.be/fr/open-data/code-refnis",
+            "example": "92094-74145",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "unique": true
+            }
+        },
