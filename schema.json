@@ -236,7 +236,7 @@
          {
             "name": "roadworks_type",
             "title": "Type de travaux",
-            "description": "Le champ précise le type de travaux de voirie. Les valeurs possibles sont : Aménagement de voiries (création d'un trottoir, installation d'un ralentisseur, ...), Impétrant (installation du gaz, remplacement des égouts, …), Réfection de voiries (remplacement du revêtement, réparation d'un nid de poule, entretion des trottoirs, ...), Création de voiries, Autre",
+            "description": "Le champ précise le type de travaux de voirie. Les valeurs possibles sont : Aménagement de voiries (création d'un trottoir, installation d'un ralentisseur, ...), Impétrant (installation du gaz, remplacement des égouts, …), Réfection de voiries (remplacement du revêtement, réparation d'un nid de poule, entretien des trottoirs, ...), Création de voiries, Autre",
             "example": "Impétrant",
             "type": "string",
             "constraints": {
@@ -247,7 +247,7 @@
          {
             "name": "roadworks_type_description",
             "title": "Description du type de travaux",
-            "description": "Ce champ est recommandé. Il précise de la nature des travaux.",
+            "description": "Ce champ est recommandé. Il précise la nature des travaux.",
             "example": "Installation du gaz",
             "type": "string",
             "constraints": {
