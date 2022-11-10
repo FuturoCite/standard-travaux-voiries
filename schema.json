@@ -18,7 +18,7 @@
        {
           "title":"Fichier valide (CSV)",
           "name":"exemple-valide-csv",
-          "path":"TBD"
+          "path":"https://raw.githubusercontent.com/FuturoCite/standard-travaux-voiries/main/exemple-valide.csv"
        }
     ],
     "author": "Futuro Cité, avec l'appui de Datactivist",
