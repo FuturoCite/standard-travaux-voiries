@@ -352,7 +352,7 @@
             "example": "Réduction de la circulation à une bande par sens de circulation",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": false,
                 "enum": ["Sens unique", "Sens unique limité", "Réduction du nombre de bandes", "Circulation alternée", "Voie fermée", "Vitesse réduite", "Limitation selon le gabarit du véhicule", "Pas de modification"]
             }
          },
