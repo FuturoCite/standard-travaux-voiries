@@ -280,7 +280,8 @@
             "title": "Date de début",
             "description": "Ce champ renseigne la date exacte de début du chantier. Pour un chantier planifié : date de début prévue. Pour un chantier en cours ou terminé : date de début effective. Le champ respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD). Il doit être mis à jour lorsque la date de début du chantier évolue.",
             "example": "2020-10-14",
-            "type": "default",
+            "type": "date",
+            "format": "default",
             "constraints": {
                 "required": false
             }
@@ -290,7 +291,8 @@
             "title": "Date de fin",
             "description": "Ce champ indique la date de fin du chantier. Pour un chantier planifié ou en cours : date de fin prévue. Pour un chantier terminé : date de fin effective. Le champ respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD). Ce champ doit être  mis à jour lorsque la date de fin du chantier évolue.",
             "example": "2021-11-03",
-            "type": "default",
+            "type": "date",
+            "format": "default",
             "constraints": {
                 "required": true
             }
