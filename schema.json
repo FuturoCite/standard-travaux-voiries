@@ -129,7 +129,7 @@
             "example": "Report des Travaux rue de la Madeleine et rue De Gueldre",
             "type": "string",
             "constraints": {
-                "required": false
+                "required": true
             }
         },
         {
