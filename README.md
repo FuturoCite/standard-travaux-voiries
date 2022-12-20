@@ -148,7 +148,7 @@ Ce champ doit être mis à jour lorsque la date de fin du chantier évolue.
    </td>
   </tr>
   <tr>
-   <td>Geométrie
+   <td>Coordonnées
    </td>
    <td>Ce champ est recommandé. Il indique les coordonnées de la zone du chantier. Il respecte le format WGS 1984 (latitude,longitude). Ne pas mettre d'espace après la virgule. Les coordonnées d'un lieu peuvent être générées ici :<a href="https://www.coordonnees-gps.fr/carte/pays/BE"> https://www.coordonnees-gps.fr/carte/pays/BE</a>
    </td>
