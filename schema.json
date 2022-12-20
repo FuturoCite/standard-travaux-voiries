@@ -298,8 +298,8 @@
             }
          },
          { 
-            "name": "geometry",
-            "title": "Geométrie",
+            "name": "coordonates",
+            "title": "Coordonnées",
             "description": "Ce champ est recommandé. Il indique les coordonnées de la zone du chantier. Il respecte le format WGS 1984 (latitude,longitude). Ne pas mettre d'espace après la virgule. Les coordonnées d'un lieu peuvent être générées ici : https://www.coordonnees-gps.fr/carte/pays/BE",
             "example": "50.46667043338194,4.847505306238095",
             "type": "string",
