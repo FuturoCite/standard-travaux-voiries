@@ -28,97 +28,97 @@ Le tableau ci-dessous donne un aperçu des champs du schéma.
    </td>
   </tr>
   <tr>
-   <td>Identifiant unique du chantier
+   <td>Identifiant unique du chantier (id)
    </td>
    <td>Ce champ contient un identifiant unique local. Le producteur de données le génère en associant le code INS de la commune dans laquelle se situe le chantier à un nombre. Ce champ permet d'éviter localement les doublons. Le code INS de la commune est accessible ici :<a href="https://statbel.fgov.be/fr/open-data/code-refnis"> https://statbel.fgov.be/fr/open-data/code-refnis</a>
    </td>
   </tr>
   <tr>
-   <td>Nom
+   <td>Nom (name)
    </td>
    <td>Ce champ renseigne le nom du chantier.
    </td>
   </tr>
   <tr>
-   <td>Description
+   <td>Description (description)
    </td>
    <td>Ce champ contient une description complète des travaux. Si le chantier suit ou est suivi d'autres travaux, cela peut-être précisé.
    </td>
   </tr>
   <tr>
-   <td>Lien description chantier
+   <td>Lien description chantier (description_url)
    </td>
    <td>Si le chantier est documenté sur une page web, le producteur de données peut renseigner l'URL dans ce champ.
    </td>
   </tr>
   <tr>
-   <td>Nom de la commune
+   <td>Nom de la commune (municipality)
    </td>
    <td>Le champ indique le nom de la commune dans laquelle se déroule les travaux. Le nom de la commune provient de la base de données BeST Address : https://opendata.bosa.be/index.fr.html ou de la liste des codes INS : https://statbel.fgov.be/fr/open-data/code-refnis
    </td>
   </tr>
   <tr>
-   <td>Code INS
+   <td>Code INS (ins_code)
    </td>
    <td>Ce champ contient le code INS de la commune où se situe le chantier. Il est accessible ici :<a href="https://statbel.fgov.be/fr/open-data/code-refnis"> https://statbel.fgov.be/fr/open-data/code-refnis</a>
    </td>
   </tr>
   <tr>
-   <td>Partie de commune
+   <td>Partie de commune (zone_address)
    </td>
    <td>Ce champ continent le nom de la partie de commune où se situe le chantier, conforme à l'appelation dans StatBel :<a href="https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie"> https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie</a>
    </td>
   </tr>
   <tr>
-   <td>Code INS de la partie de commune
+   <td>Code INS de la partie de commune (ins_zone_address)
    </td>
    <td>Ce champ contient le code INS de la partie de commune où se situe le chantier. La découpe géographique de StatBel Level 5 (NIS6) liste ces codes :<a href="https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie"> https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie</a>
    </td>
   </tr>
   <tr>
-   <td>Nom de rue
+   <td>Nom de rue (street_name)
    </td>
    <td>Ce champ contient le nom de la voirie concernée par les travaux.
    </td>
   </tr>
   <tr>
-   <td>Code rue BeSTAddress
+   <td>Code rue BeSTAddress (street_number)
    </td>
    <td>Ce champ contient le code de la voirie où se situent les travaux dans la base de données BeSTAdress (ou de la voirie la plus proche) :<a href="https://opendata.bosa.be/index.fr.html"> https://opendata.bosa.be/index.fr.html</a>
    </td>
   </tr>
   <tr>
-   <td>Code rue national
+   <td>Code rue national (street_number_rrn)
    </td>
    <td>Code de la voirie où se situe le chantier dans le registre national (ou de la voirie la plus proche).
    </td>
   </tr>
   <tr>
-   <td>Localisation
+   <td>Localisation (location)
    </td>
    <td>Ce champ précise l'endroit de la voirie où se trouve le chantier.
    </td>
   </tr>
   <tr>
-   <td>Type de travaux
+   <td>Type de travaux (roadworks_type)
    </td>
    <td>Le champ précise le type de travaux de voirie. Les valeurs possibles sont : Aménagement de voiries (création d'un trottoir, installation d'un ralentisseur, ...) ; Impétrant (installation du gaz, remplacement des égouts, …) ; Réfection de voiries (remplacement du revêtement, réparation d'un nid de poule, entretien des trottoirs, ...) ; Création de voiries ; Autre
    </td>
   </tr>
   <tr>
-   <td>Description du type de travaux
+   <td>Description du type de travaux (roadworks_type_description)
    </td>
    <td>Ce champ est recommandé. Il précise la nature des travaux.
    </td>
   </tr>
   <tr>
-   <td>Statut du chantier
+   <td>Statut du chantier (status)
    </td>
    <td>Ce champ informe sur le statut du chantier. Ce champ doit être mis à jour au moment du changement de statut (début ou fin des travaux). Les valeurs possibles sont : Planifié ; En cours ; Terminé
    </td>
   </tr>
   <tr>
-   <td>Année
+   <td>Année (year)
    </td>
    <td>Ce champ renseigne sur l'année de début du chantée.
 <p>
@@ -128,7 +128,7 @@ Ce champ doit être mis à jour lorsque la date de début du chantier évolue.
    </td>
   </tr>
   <tr>
-   <td>Date de début
+   <td>Date de début (start_date)
    </td>
    <td>Ce champ renseigne la date exacte de début du chantier. Pour un chantier planifié : date de début prévue. Pour un chantier en cours ou terminé : date de début effective.
 <p>
@@ -138,7 +138,7 @@ Il doit être mis à jour lorsque la date de début du chantier évolue.
    </td>
   </tr>
   <tr>
-   <td>Date de fin
+   <td>Date de fin (end_date)
    </td>
    <td>Ce champ indique la date de fin du chantier. Pour un chantier planifié ou en cours : date de fin prévue. Pour un chantier terminé : date de fin effective.
 <p>
@@ -148,79 +148,79 @@ Ce champ doit être mis à jour lorsque la date de fin du chantier évolue.
    </td>
   </tr>
   <tr>
-   <td>Geométrie
+   <td>Geométrie (geometry)
    </td>
    <td>Ce champ est recommandé. Il indique les coordonnées de la zone du chantier. Il respecte le format WGS 1984 (latitude,longitude). Ne pas mettre d'espace après la virgule. Les coordonnées d'un lieu peuvent être générées ici :<a href="https://www.coordonnees-gps.fr/carte/pays/BE"> https://www.coordonnees-gps.fr/carte/pays/BE</a>
    </td>
   </tr>
   <tr>
-   <td>Superficie du chantier
+   <td>Superficie du chantier (site_area)
    </td>
    <td>Ce champ indique la superficie du chantier en mètres carrés.
    </td>
   </tr>
   <tr>
-   <td>Longueur de voirie en chantier
+   <td>Longueur de voirie en chantier (length)
    </td>
    <td>Ce champ indique la longueur de la voirie concernée par le chantier en mètres.
    </td>
   </tr>
   <tr>
-   <td>Validé par les autorités
+   <td>Validé par les autorités (validated_by_authorities)
    </td>
    <td>Ce champ précise si le chantier a été validé par les autorités. Si non applicable : ne pas renseigner ce champ.
    </td>
   </tr>
   <tr>
-   <td>Impacts du chantier
+   <td>Impacts du chantier (impact)
    </td>
    <td>Ce champ décrit les impacts prévus par le chantier (mobilité, environnement, bruit, …)
    </td>
   </tr>
   <tr>
-   <td>Adaptations de la circulation
+   <td>Adaptations de la circulation (traffic_adaptation)
    </td>
    <td>Ce champ est recommandé. Il indique l'éventuel dispositif modifiant la circulation pendant la durée du chantier. Les valeurs possibles sont (un choix) : Sens unique ; Sens unique limité ; Réduction du nombre de bandes ; Circulation alternée ; Voie fermée ; Vitesse réduite ; Limitation selon le gabarit du véhicule ; Pas de modification
    </td>
   </tr>
   <tr>
-   <td>Gestionnaire du chantier
+   <td>Gestionnaire du chantier (provider)
    </td>
    <td>Ce champ indique le nom du commanditaire (public ou privé) du chantier.
    </td>
   </tr>
   <tr>
-   <td>Responsable de la signalisation
+   <td>Responsable de la signalisation (signage_manager)
    </td>
    <td>Ce champ est recommandé. Il indique le nom du responsable de la signalisation du chantier.
    </td>
   </tr>
   <tr>
-   <td>Entrepreneur
+   <td>Entrepreneur (contractor)
    </td>
    <td>Ce champ est recommandé. Il indique le nom de l'entrepreneur responsable du chantier
    </td>
   </tr>
   <tr>
-   <td>Budget previsionnel
+   <td>Budget previsionnel (projected_budget)
    </td>
    <td>Ce champ est recommandé. Il indique le budget prévisionnel du chantier exprimé en euros TVAC.
    </td>
   </tr>
   <tr>
-   <td>Montant effectif
+   <td>Montant effectif (effective_amount)
    </td>
    <td>Ce champ est recommandé. Il indique le montant effectif du chantier exprimé en euros TVAC.
    </td>
   </tr>
   <tr>
-   <td>Date de création de la donnée
+   <td>Date de création de la donnée (created_date)
    </td>
    <td>Ce champ indique la date de création de la donnée dans le jeu. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD)
    </td>
   </tr>
   <tr>
-   <td>Date de dernière modification de la donnée
+   <td>Date de dernière modification de la donnée (last_modified_date)
    </td>
    <td>Ce champ indique la date de la dernière modification de la donnée dans le jeu. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD).
    </td>
