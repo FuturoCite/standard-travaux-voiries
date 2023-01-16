@@ -28,7 +28,8 @@ Le tableau ci-dessous donne un aperçu des champs du schéma.
    </td>
   </tr>
   <tr>
-   <td>Identifiant unique du chantier (id)
+   <td>Identifiant unique du chantier 
+     <br>(id)
    </td>
    <td>Ce champ contient un identifiant unique local. Le producteur de données le génère en associant le code INS de la commune dans laquelle se situe le chantier à un nombre. Ce champ permet d'éviter localement les doublons. Le code INS de la commune est accessible ici :<a href="https://statbel.fgov.be/fr/open-data/code-refnis"> https://statbel.fgov.be/fr/open-data/code-refnis</a>
    </td>
