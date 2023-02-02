@@ -330,7 +330,7 @@
          { 
             "name": "validated_by_authorities",
             "title": "Validé par les autorités",
-            "description": "Ce champ précise si le chantier a été validé par les autorités. Si non applicable : ne pas renseigner ce champ.",
+            "description": "Ce champ précise si le chantier a été validé par les autorités (valeur 'true') ou non (valeur 'false'). Si non applicable : ne pas renseigner ce champ.",
             "example": "true",
             "type": "boolean",
             "constraints": {
