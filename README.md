@@ -237,7 +237,7 @@ Ce champ doit être mis à jour lorsque la date de fin du chantier évolue.
    </td>
    <td>Optionnel
    </td>
-   <td>Ce champ précise si le chantier a été validé par les autorités. Si non applicable : ne pas renseigner ce champ.
+   <td>Ce champ précise si le chantier a été validé par les autorités (valeur 'true') ou non (valeur 'false'). Si non applicable : ne pas renseigner ce champ.
    </td>
   </tr>
   <tr>
