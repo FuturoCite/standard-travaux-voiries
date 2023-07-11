@@ -170,7 +170,7 @@ Le tableau ci-dessous donne un aperçu des champs du schéma.
    </td>
    <td>Obligatoire
    </td>
-   <td>Ce champ renseigne sur l'année de début du chantée.
+   <td>Ce champ renseigne sur l'année de début du chantier.
 <p>
 Pour un chantier planifié, renseigner l'année de début prévue. Pour un chantier en cours ou terminé, indiquer l'année de début effective.
 <p>
